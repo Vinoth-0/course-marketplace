@@ -83,7 +83,7 @@ public class SecurityConfig {
             )
             .authorizeHttpRequests(auth -> auth
                 // Public — no token needed
-                .requestMatchers("/api/auth/register", "/api/auth/login").permitAll()
+                .requestMatchers("/api/auth/*").permitAll()
                 // Public course browsing — guests can see the catalog
                 .requestMatchers(
                     org.springframework.http.HttpMethod.GET, "/api/courses", "/api/courses/**"

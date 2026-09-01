@@ -20,11 +20,8 @@ import com.CourseMkp.repository.UserRepository;
 public class CourseService {
 
     private final CourseRepository courseRepository;
-    private final UserRepository userRepository;
-
     public CourseService(CourseRepository courseRepository, UserRepository userRepository) {
         this.courseRepository = courseRepository;
-        this.userRepository = userRepository;
     }
 
     /**
